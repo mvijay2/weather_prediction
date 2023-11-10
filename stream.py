@@ -55,7 +55,7 @@ st.caption('it wont give you in decimal point')
 
 
 ##radio widget
-st.radio('pick your state',['Telangana','AP','WB','bhr','krl'])
+st.radio('pick your state',['Telangana','AandhraPradesh','WB','bhr','krl'])
 
 #select box
 st.selectbox('pick your educatation qualification',['10th','12th','degree'])
