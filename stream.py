@@ -58,7 +58,7 @@ st.caption('it wont give you in decimal point')
 st.radio('pick your state',['Telangana','Andhrapradesh','wb','bhr','krl'])
 
 #select box
-st.selectbox('pick your educatation qualification',['10th','12','degree'])
+st.selectbox('pick your educatation qualification',['10th','12th','degree'])
 
 #checkbox
 st.button('click')
