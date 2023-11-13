@@ -1,10 +1,10 @@
 
 import streamlit as st
-import joblib
+import joblib as jb
 import numpy as np
 
 # Load the saved model
-loaded_model = joblib.load("D:\git projects\weather_prediction\weatherpred.joblib")
+loaded_model = jb.load("D:\git projects\weather_prediction\weatherpred.joblib")
 
 # Streamlit app
 st.title('weather prediction')
