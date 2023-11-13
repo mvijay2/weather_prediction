@@ -37,5 +37,8 @@ def main():
 
     st.success(result)
 
-main()
+if __name__=='__main__':
+    main()
+ 
+
    
