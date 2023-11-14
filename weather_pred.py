@@ -7,7 +7,7 @@ import numpy as np
 loaded_model = jb.load("D:\git projects\weather_prediction\weatherpred.joblib")
 
 # Streamlit app
-st.title('weather prediction')
+st.title('Asifabad Weather Prediction')
 
 def weather_prediction(input_data):
    
@@ -17,21 +17,21 @@ def weather_prediction(input_data):
     prediction = loaded_model.predict(data)
     #prediction   ``
     if prediction==0:
-        return 'NO RAIN, lets dry whatever you want'
+        return 'NO RAIN :cloud:'
     else:
         return 'Raining'
                        
 def main():
     
-    day=st.text_input('enter day')
-    month=st.text_input('enter month')
-    year=st.text_input('enter year')
-    TMAX=st.text_input('enter t_max')
-    TMIN=st.text_input('enter t_min')
+    day=st.text_input('Enter Date')
+    month=st.text_input('Enter Month')
+    year=st.text_input('Enter Year')
+    TMAX=st.text_input('Enter T_max')
+    TMIN=st.text_input('Enter T_min')
     
     result=''
 
-    if st.button('predict weather'):
+    if st.button('Predict Weather'):
 
       result=weather_prediction([day,month,year,TMAX,TMIN])
 
