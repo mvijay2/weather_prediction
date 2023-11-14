@@ -15,7 +15,7 @@ def weather_prediction(input_data):
     data=np_array.reshape(1,-1)
     #data=scaler.fit_transform(reshaped)
     prediction = loaded_model.predict(data)
-    #prediction
+    #prediction   ``
     if prediction==0:
         return 'NO RAIN, lets dry whatever you want'
     else:
